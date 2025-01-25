@@ -1,6 +1,6 @@
 # Computation_Material_Science
 
-```markdown
+
 # Computational Material Science
 
 Este repositorio reúne las prácticas y trabajos asignados durante nuestro aprendizaje y exploración en el área de ciencia de materiales computacional. Aquí documentamos el uso de software especializado y el inicio en la investigación bajo la guía del Dr. Tomás Rojas.
