@@ -3,7 +3,7 @@
    tstress          = .true.
    tprnfor          = .true.
    outdir           = '.'
-   prefix           = 'graphene_h_over_c'
+   prefix           = 'graphene_h_in_c'
    pseudo_dir       = '/home/ebarquero/practicas/p2/pseudo/'
 /
 &SYSTEM
