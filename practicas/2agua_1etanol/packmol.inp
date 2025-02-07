@@ -1,0 +1,13 @@
+tolerance 2.0
+filetype xyz
+output mezcla.xyz
+
+structure agua.xyz
+  number 296
+  inside box 0. 0. 0. 20. 20. 20.
+end structure
+
+structure etanol.xyz
+  number 46
+  inside box 0. 0. 0. 20. 20. 20.
+end structure
