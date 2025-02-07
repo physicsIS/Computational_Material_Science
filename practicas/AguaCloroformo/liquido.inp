@@ -1,0 +1,14 @@
+tolerance 2.0
+filetype xyz
+output mezcla.xyz
+
+structure agua.xyz
+  number 935
+  inside box 0.0 0.0 0.0 30.0 30.0 30.0
+end structure
+
+structure cloroformo.xyz
+  number 13
+  inside box 0.0 0.0 0.0 30.0 30.0 30.0
+end structure
+
