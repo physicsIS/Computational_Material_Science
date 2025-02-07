@@ -1,0 +1,13 @@
+tolerance 2.0
+filetype xyz
+output mixture.xyz
+
+structure Methanol.xyz
+  number 43
+  inside cube 0. 0. 0. 18.
+end structure
+
+structure Acetone.xyz
+  number 24
+  inside cube 0. 0. 0. 18.
+end structure
