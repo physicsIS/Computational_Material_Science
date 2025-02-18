@@ -1,0 +1,52 @@
+&CONTROL
+   calculation      = 'relax'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = '.'
+   prefix           = 'Al-O-Al'
+   pseudo_dir       = '/home/ebarquero/practicas/p2/pseudo/'
+/
+&SYSTEM
+   ibrav            = 0
+   ecutwfc          = 58
+   ecutrho          = 256
+   occupations      = 'smearing'
+   degauss          = 0.02
+   smearing         = 'mp'
+   ntyp             = 2
+   nat              = 9
+/
+&ELECTRONS
+   conv_thr         = 1e-06
+/
+&IONS
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Al 26.9815385 Al.pbe-n-kjpaw_psl.1.0.0.UPF
+O 15.999 O.pbe-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+3 3 3  0 0 0
+
+CELL_PARAMETERS angstrom
+5.72756492761104 0.00000000000000 0.00000000000000
+2.86378246380552 4.96021672913593 0.00000000000000
+0.00000000000000 0.00000000000000 22.33826859021799
+
+ATOMIC_POSITIONS angstrom
+Al 0.0000000000 1.6534055764 10.0000000000  
+Al 2.8637824638 1.6534055764 10.0000000000  
+Al 1.4318912319 4.1335139409 10.0000000000  
+Al 4.2956736957 4.1335139409 10.0000000000  
+Al 0.0000000000 0.0000000000 12.3382685902  
+Al 2.8637824638 0.0000000000 12.3382685902  
+Al 1.4318912319 2.4801083646 12.3382685902  
+Al 4.2956736957 2.4801083646 12.3382685902  
+O 1.4318912319 0.8267027882 13.8382685902  
+
