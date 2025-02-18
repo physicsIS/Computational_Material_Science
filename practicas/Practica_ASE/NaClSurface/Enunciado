@@ -1,1 +1,0 @@
-Construye una superficie de NaCl en el plano (100) con una supercelda (2x2x2) que contenga 16 átomos (8 de sodio y 8 de cloro). Coloca un átomo de sodio adicional en dos posiciones: sobre un átomo de sodio y sobre un átomo de cloro. Exporta los archivos para Quantum ESPRESSO y optimiza ambas configuraciones.
