@@ -4,7 +4,7 @@
    tprnfor          = .true.
    outdir           = '.'
    prefix           = 'graphene_h_in_c'
-   pseudo_dir       = '/home/ebarquero/practicas/p2/pseudo/'
+   pseudo_dir       = '../../pseudo/'
 /
 &SYSTEM
    ibrav            = 0

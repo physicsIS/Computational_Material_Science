@@ -1,4 +1,4 @@
-# Computation_Material_Science
+# Computational_Material_Science
 
 
 # Computational Material Science
