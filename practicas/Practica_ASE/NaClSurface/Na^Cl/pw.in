@@ -4,7 +4,7 @@
    tprnfor          = .true.
    outdir           = '.'
    prefix           = 'NaCl-Na^Cl'
-   pseudo_dir       = '/home/adiaz/pseudo/'
+   pseudo_dir       = '../../pseudo/'
 /
 &SYSTEM
    ibrav            = 0
