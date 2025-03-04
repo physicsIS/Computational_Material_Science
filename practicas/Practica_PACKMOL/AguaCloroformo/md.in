@@ -1,0 +1,60 @@
+&CONTROL
+    calculation = 'md'
+    prefix = 'molecular_dynamics'
+    outdir = './tmp/'
+    wf_collect = .true.
+    tstress = .true.
+    tprnfor = .true.
+    etot_convergence = 1.0d-4
+    nstep = 1000                  ! Número de pasos de la simulación
+    dt = 5.0e-3                   ! Paso de tiempo (en unidades de atómico, 5 fs)
+/
+
+&SYSTEM
+    ibrav = 2                      ! Estructura de la celda (cúbica simple)
+    celldm(1) = 10.0                ! Parámetro de la celda
+    nat = 20                        ! Número de átomos
+    ntyp = 2                        ! Número de tipos de átomos
+    ecutwfc = 30.0                  ! Energía de corte para las funciones de onda
+    ecutrho = 300.0                 ! Energía de corte para la densidad electrónica
+    occupations = 'smearing'        ! Smearing para los electrones
+    smearing = 'marzari-vanderbilt' ! Tipo de smearing
+    degauss = 0.02                  ! Ancho de la función de smearing
+/
+
+&ELECTRONS
+    conv_thr = 1.0d-8              ! Umbral de convergencia
+    mixing_mode = 'plain'
+    mixing_beta = 0.7
+/
+
+&IONS
+    ion_dynamics = 'verlet'        ! Método de dinámica para los iones
+    press = 0.0                     ! No hay presión aplicada
+    pot_extrapolation = 'second_order'
+/
+
+&MD
+    tempw = 300.0                   ! Temperatura objetivo en Kelvin
+    nstep = 1000                    ! Número de pasos de simulación (1000 pasos = 200 fs con dt=5 fs)
+    dt = 5.0e-3                     ! Paso de tiempo (5 fs)
+    ionic_convergence = 1.0d-4      ! Criterio de convergencia de los iones
+    output_file = 'md_output.dat'   ! Archivo de salida
+    restart = .true.                 ! Guardar el estado para reiniciar la simulación
+    velocity = .true.                ! Iniciar con velocidades aleatorias
+    temp_s = 300.0                  ! Temperatura objetivo del termostato
+    nthermo = 50                    ! Número de pasos entre cada impresión de información
+/
+
+ATOMIC_SPECIES
+O  15.9994  O.pz-rrkjus.UPF
+H  1.00794  H.pz-rrkjus.UPF
+
+ATOMIC_POSITIONS (angstrom)
+O  0.0000  0.0000  0.0000
+H  0.9572  0.0000  0.0000
+H -0.2390  0.9272  0.0000
+
+K_POINTS automatic
+4 4 4 0 0 0
+
