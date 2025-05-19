@@ -48,7 +48,7 @@ class Molecula():
         """
 
 		self.nombre = nombre
-		self.idx_list = np.array([])
+		self.idx_list = [] #np.array([],dtype=int)
 		self.atomos = np.array([])
 
 	def agregar_atomos(self,simbolo,idx, x,y,z):
@@ -64,14 +64,14 @@ class Molecula():
         """
 
 		atomo = Atomo(simbolo,idx,x,y,z)
-		self.idx_list = np.append(self.idx_list,atomo.idx) # Se agrega el indice del atomo agregado
+		self.idx_list.append(atomo.idx) #self.idx_list = np.append(self.idx_list,atomo.idx) # Se agrega el indice del atomo agregado
 		self.atomos = np.append(self.atomos, atomo)
 		
 		
 
 
 
-def get_molecules(moleculas:list,cantidad_moleculas:list, file):
+def get_molecules(moleculas:list, file):
 	'''Esta funcion tiene como proposito obtener las moleculas individuales de un archivo que pueda leer ASE.
 	
 	get_molecules va a buscar en el archivo todos los atomos correspondientes a las moleculas solicitadas y los va a asignar a dicha una nueva variable que va a contener dicha molecula, sin importar si existe repeticion por multiplicidad de moleculas iguales, todas seran contenidas por separado. Funciona bajo la suposicion de que el arreglo de los atomos es tal que se muestran primero todas las moleculas de un mismo tipo y luego las del siguente tipo.
@@ -80,7 +80,6 @@ def get_molecules(moleculas:list,cantidad_moleculas:list, file):
 
 	Args:
 		moleculas (list): Lista de todas las especies de moleculas que componen la mezcla deseada.
-		cantidad_moleculas (list): Lista que contiene la cantidad de moleculas de cada especie en la mezcla. POSIBLEMENTE SE QUITE
 		file (file): Archivo que contiene la mezcla a trabajar.
 
 	Returns:
