@@ -3,13 +3,13 @@ filetype xyz
 output mezcla_liquido_ionico.xyz
 
 structure EMIC.xyz
-  number 10
-  inside box 0. 0. 0. 14.22 14.22 14.22
+  number 4
+  inside box 0. 0. 0. 8.4 8.4 8.4
 end structure
 
 structure AlCl3.xyz
-  number 13
-  inside box 0. 0. 0. 14.22 14.22 14.22
+  number 5
+  inside box 0. 0. 0. 8.4 8.4 8.4
 end structure
 
 
