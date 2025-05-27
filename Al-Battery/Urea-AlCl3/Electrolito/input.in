@@ -1,0 +1,13 @@
+tolerance 2.0
+filetype xyz
+output AlCl3-urea.xyz
+
+structure AlCl3.xyz
+  number 9
+  inside cube 0. 0. 0. 8.3
+end structure
+
+structure Urea.xyz
+  number 7
+  inside cube 0. 0. 0. 8.3
+end structure
