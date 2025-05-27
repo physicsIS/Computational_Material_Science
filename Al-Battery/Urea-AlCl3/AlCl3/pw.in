@@ -1,0 +1,43 @@
+&CONTROL
+    calculation = 'relax',
+    restart_mode = 'from_scratch',
+    prefix = 'AlCl3',
+    pseudo_dir = '/home/adiaz/pseudo/',
+    outdir = './AlCl-Relax',
+    tstress = .true.,
+    tprnfor = .true.,
+/
+&SYSTEM
+    ibrav = 0,
+    nat = 4,
+    ntyp = 2,
+    ecutwfc = 65.0,
+    ecutrho = 270.0,
+    occupations = 'smearing',
+    smearing = 'mp',
+    degauss = 0.02,
+/
+&ELECTRONS
+    conv_thr = 1.0d-8,
+    mixing_beta = 0.7,
+    electron_maxstep = 200,
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+    Cl   35.453  Cl.pbe-n-kjpaw_psl.1.0.0.UPF 
+    Al   26.982  Al.pbe-n-kjpaw_psl.1.0.0.UPF
+CELL_PARAMETERS (angstrom)
+    14.0    0.0   0.0
+     0.00  14.0   0.0
+     0.00   0.0  14.0
+ATOMIC_POSITIONS (crystal)
+Cl       8.80142500       8.55260000       6.78712000
+Cl       5.19857500       8.56542000       6.55524000
+Cl       6.98145500       5.43458000       6.78697000
+Al       6.94660500       7.54505000       7.44476000
+K_POINTS automatic
+    2 2 2 0 0 0
+
