@@ -1,0 +1,15 @@
+tolerance 2.0
+filetype xyz
+output mezcla_liquido_ionico.xyz
+
+structure EMIC.xyz
+  number 4
+  inside box 0. 0. 0. 8.3 8.3 8.3
+end structure
+
+structure AlCl3.xyz
+  number 5
+  inside box 0. 0. 0. 8.3 8.3 8.3
+end structure
+
+
