@@ -1,0 +1,4 @@
+ffmpeg -i movie.mpg -vcodec libx264 -crf 23 movie.mp4
+
+# -vcodec libx264 es el codec que se va a utilizar para la conversion de formatos
+# -crf 23 (Constant Rate Factor) control de la calidad del video, 23 significa buena calidad, mas bajo, mejor calidad
