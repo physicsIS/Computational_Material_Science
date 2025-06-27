@@ -1,0 +1,22 @@
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+STOP 3
+srun: error: kura-2b.cnca: tasks 0-19: Exited with exit code 3
