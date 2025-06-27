@@ -3,13 +3,3 @@ https://pubchem.ncbi.nlm.nih.gov/compound/24012
 
 [EMIm]Cl
 https://pubchem.ncbi.nlm.nih.gov/compound/2734160
-
-1-Ethyl-3-methylimidazolium
-https://pubchem.ncbi.nlm.nih.gov/compound/174076
-
-AlCl3_minus
-https://pubchem.ncbi.nlm.nih.gov/compound/25114082
-
-
-Al2Cl7_minus
-https://pubchem.ncbi.nlm.nih.gov/compound/22342451

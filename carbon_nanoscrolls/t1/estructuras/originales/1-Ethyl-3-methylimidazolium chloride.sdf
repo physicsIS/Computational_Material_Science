@@ -1,0 +1,154 @@
+2734160
+  -OEChem-06132510592D
+
+ 20 19  0     0  0  0  0  0  0999 V2000
+    4.9923    2.1932    0.0000 Cl  0  5  0  0  0  0  0  0  0  0  0  0
+    1.4030    2.0369    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9030    3.5758    0.0000 N   0  3  0  0  0  0  0  0  0  0  0  0
+    1.4030    1.0369    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2120    2.6247    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5939    2.6247    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9030    3.5758    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5369    0.5369    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4908    4.3848    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6150    0.4543    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0135    1.1446    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8016    2.4331    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0043    2.4331    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5385    4.0774    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2269    1.0739    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.2269    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8469    0.0000    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9923    4.0204    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8552    4.8864    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9892    4.7492    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  4  1  0  0  0  0
+  2  5  1  0  0  0  0
+  2  6  1  0  0  0  0
+  3  5  2  0  0  0  0
+  3  7  1  0  0  0  0
+  3  9  1  0  0  0  0
+  4  8  1  0  0  0  0
+  4 10  1  0  0  0  0
+  4 11  1  0  0  0  0
+  5 12  1  0  0  0  0
+  6  7  2  0  0  0  0
+  6 13  1  0  0  0  0
+  7 14  1  0  0  0  0
+  8 15  1  0  0  0  0
+  8 16  1  0  0  0  0
+  8 17  1  0  0  0  0
+  9 18  1  0  0  0  0
+  9 19  1  0  0  0  0
+  9 20  1  0  0  0  0
+M  CHG  2   1  -1   3   1
+M  END
+> <PUBCHEM_COMPOUND_CID>
+2734160
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+72.9
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+1
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+0
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+1
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccBjAAAEAAAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAAABgAAAHAAAAAAAAADBAgQvkBcMEACgABAnZAAAgC0REqAJQAAYMACASAAACAAQAAAIAAKAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+1-ethyl-3-methyl-imidazol-3-ium;chloride
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+1-ethyl-3-methylimidazol-3-ium;chloride
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+1-ethyl-3-methylimidazol-3-ium;chloride
+
+> <PUBCHEM_IUPAC_NAME>
+1-ethyl-3-methylimidazol-3-ium;chloride
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+1-ethyl-3-methyl-imidazol-3-ium;chloride
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+1-ethyl-3-methyl-imidazol-3-ium;chloride
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C6H11N2.ClH/c1-3-8-5-4-7(2)6-8;/h4-6H,3H2,1-2H3;1H/q+1;/p-1
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+BMQZYMYBQZGEEY-UHFFFAOYSA-M
+
+> <PUBCHEM_EXACT_MASS>
+146.0610761
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C6H11ClN2
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+146.62
+
+> <PUBCHEM_SMILES>
+CCN1C=C[N+](=C1)C.[Cl-]
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+CCN1C=C[N+](=C1)C.[Cl-]
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+CCN1C=C[N+](=C1)C.[Cl-]
+
+> <PUBCHEM_CACTVS_TPSA>
+8.8
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+146.0610761
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+9
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+2
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+2  5  8
+2  6  8
+3  5  8
+3  7  8
+6  7  8
+
+$$$$
