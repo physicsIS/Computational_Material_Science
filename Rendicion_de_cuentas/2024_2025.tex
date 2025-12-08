@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{setspace}
+\setstretch{1.2}
+
+\title{Rendición de cuentas --- Proyecto Computational Material Science (Physics in Silico)}
+\author{Club de Física Computacional --- \textit{Physics in Silico (PhiS)}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introducción}
+
+El proyecto \textbf{Computational Material Science} forma parte de las iniciativas desarrolladas dentro del club de física computacional \textit{Physics in Silico (PhiS)}, de la Universidad de Costa Rica. 
+Bajo la guía del investigador \textbf{Tomás Rojas}, este proyecto tiene como objetivo explorar y aplicar métodos de la física computacional y la ciencia de materiales para estudiar sistemas con relevancia tecnológica, tales como compuestos utilizados en el desarrollo de baterías de aluminio y materiales magnéticos de interés.
+
+El equipo de trabajo está conformado por los miembros del club que se detallan a continuación, quienes han realizado aportes específicos en el uso de software de simulación, modelado atómico y computación de alto rendimiento.
+
+\section*{Miembros y avances individuales}
+
+\subsection*{Ángel Mendieta}
+
+Ángel ha realizado pruebas y optimizaciones de cálculos utilizando el paquete \texttt{DeepMD}. Actualmente trabaja en simulaciones con \texttt{Quantum ESPRESSO} que incluyen efectos de \textit{canting} y desplazamientos atómicos, con el propósito de generar un nuevo conjunto de datos (\textit{dataset}) para el entrenamiento de modelos de \texttt{DeepMD} empleando el material \textbf{CrN (nitruro de cromo)}.
+
+\subsection*{Andrés Díaz Pereira}
+
+Andrés participa en un proyecto enfocado en el compuesto \textbf{AlCl$_3$-Urea}, un electrolito con potencial aplicación en baterías de aluminio. 
+Su trabajo se centra en el uso del software \texttt{DeePMD} para derivar un pseudopotencial efectivo a partir de simulaciones de dinámica molecular \textit{ab initio}, con el fin de realizar simulaciones de dinámica molecular clásica que permitan estudiar el comportamiento estructural y termodinámico del sistema.
+
+\subsection*{Gabriel Álvarez}
+
+Gabriel desarrolla un proyecto análogo al de Andrés, pero aplicado al compuesto \textbf{AlCl$_3$-EMIC}, otro electrolito candidato para baterías de aluminio. 
+Mediante el uso de \texttt{DeePMD}, busca generar un potencial clásico a partir de dinámica molecular \textit{ab initio} que permita simular las interacciones entre los iones del sistema y caracterizar sus propiedades de transporte.
+
+\subsection*{Hernán Barquero}
+
+Hernán trabaja en la \textbf{simulación de la interacción del electrolito AlCl$_3$-EMIC con un nanopergamino de carbono}, con el propósito de evaluar su potencial como componente de una batería de aluminio y contrastar los resultados con observaciones experimentales previas. 
+Su trabajo se desarrolla mediante el uso del paquete \texttt{Quantum ESPRESSO}, explorando tanto la estabilidad estructural como las propiedades electrónicas del sistema compuesto.
+
+\section*{Uso de recursos de cómputo}
+
+Todos los miembros del proyecto han empleado recursos de cómputo de alto rendimiento para la ejecución de simulaciones de gran escala. En particular, se ha hecho uso de los siguientes clústeres nacionales e institucionales:
+
+\begin{itemize}
+    \item \textbf{Kabre} — Centro Nacional de Alta Tecnología (CeNAT)
+    \item \textbf{CICIMA} — Centro de Investigación en Ciencia e Ingeniería de Materiales
+    \item \textbf{Cluster Institucional (HPC-UCR)} — Universidad de Costa Rica
+\end{itemize}
+
+El acceso a estos recursos ha permitido realizar simulaciones de dinámica molecular \textit{ab initio} y entrenamientos de redes neuronales para modelos de potenciales interatómicos con una eficiencia y escala imposibles de alcanzar en equipos personales.
+
+\section*{Conclusión}
+
+El proyecto \textit{Computational Material Science} ha consolidado un equipo capaz de integrar conocimientos en física del estado sólido, simulaciones computacionales y aprendizaje automático aplicado a la ciencia de materiales. 
+Los avances logrados en el desarrollo de modelos basados en \texttt{DeepMD} y las simulaciones con \texttt{Quantum ESPRESSO} sientan una base sólida para futuras investigaciones orientadas al diseño de materiales funcionales y al estudio de sistemas energéticos sostenibles.
+
+\end{document}
