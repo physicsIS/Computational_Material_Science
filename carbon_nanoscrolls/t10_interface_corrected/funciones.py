@@ -233,3 +233,8 @@ def unir_pwouts_en_trayectoria(nombre_salida:str="trayectoria_continua.traj", ca
 	print(f"\nTrayectoria final con {len(todas_las_imagenes)} frames guardada en '{nombre_salida}'")
 
 	return todas_las_imagenes
+
+
+
+
+
