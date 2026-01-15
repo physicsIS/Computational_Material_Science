@@ -1,0 +1,14 @@
+tolerance 2.0
+filetype xyz
+output sistema_final.xyz
+
+structure estructuras/xyz/alcl3_opt.xyz
+  number 13
+  inside box 0 0 0 24.0 24.0 5.6000000000000005
+end structure
+
+structure estructuras/xyz/1-Ethyl-3-methylimidazolium_chloride_opt.xyz
+  number 17
+  inside box 0 0 0 24.0 24.0 5.6000000000000005
+end structure
+

@@ -1,0 +1,45 @@
+\section{Methodology}
+
+\subsection{System Construction}
+
+\subsubsection{Carbon Nanoscroll Model}
+
+A carbon nanoscroll (CNS) structure was constructed consisting of 192 carbon atoms arranged in a rolled graphene configuration. To simulate realistic boundary conditions and prevent unwanted structural deformations during molecular dynamics simulations, the two central rows of carbon atoms (63 atoms total) were fixed in their initial positions throughout the calculations. This constraint mimics the behavior of an extended nanoscroll structure where the central region experiences minimal displacement.
+
+\subsubsection{Electrolyte Composition}
+
+The ionic liquid electrolyte was composed of aluminum chloride (AlCl$_3$) and 1-ethyl-3-methylimidazolium chloride ([Emim]Cl) with a molar ratio of AlCl$_3$/[Emim]Cl = 1.3. Specifically, the simulation cell contained 13 AlCl$_3$ molecules and 17 [Emim]Cl molecules, maintaining the desired stoichiometric ratio.
+
+Initial molecular structures for both AlCl$_3$ and [Emim]Cl were obtained from the PubChem database~\cite{pubchem}. For the [Emim]Cl species, the [Emim]$^+$ cation structure was first retrieved from PubChem, and the chloride anion was subsequently added to form the complete ionic pair. Each molecular species was then geometrically optimized using the Quantum ESPRESSO package~\cite{qe} with the \texttt{relax} calculation mode to obtain equilibrium geometries prior to system assembly.
+
+\subsubsection{System Assembly}
+
+The electrolyte molecules were spatially distributed around the carbon nanoscroll using the PACKMOL software~\cite{packmol}, which employs optimization techniques to generate initial configurations with adequate molecular packing and minimal atomic overlaps. The final simulation system comprised 584 atoms in total, including the carbon nanoscroll structure and all electrolyte components.
+
+\subsection{Computational Details}
+
+All density functional theory (DFT) based molecular dynamics simulations were performed using the Quantum ESPRESSO package~\cite{qe}. The Perdew-Burke-Ernzerhof (PBE) exchange-correlation functional~\cite{pbe} was employed within the generalized gradient approximation (GGA). Van der Waals interactions were accounted for using the DFT-D3 dispersion correction scheme~\cite{grimme}.
+
+Projector augmented-wave (PAW) pseudopotentials were used for all atomic species: Cl.pbe-n-kjpaw\_psl.1.0.0.UPF for chlorine, Al.pbe-n-kjpaw\_psl.1.0.0.UPF for aluminum, N.pbe-n-kjpaw\_psl.1.0.0.UPF for nitrogen, C.pbe-n-kjpaw\_psl.1.0.0.UPF for carbon, and H.pbe-kjpaw\_psl.1.0.0.UPF for hydrogen. Electronic occupations were treated using Methfessel-Paxton smearing with a broadening parameter of 0.02 Ry.
+
+The simulation cell was defined as an orthorhombic box with dimensions of 25.0 \AA{} $\times$ 25.0 \AA{} $\times$ 16.8 \AA{}, providing sufficient vacuum space to prevent spurious interactions between periodic images. Only the $\Gamma$-point was used for Brillouin zone sampling, which is appropriate for such large supercells with significant spatial separation between periodic replicas.
+
+Electronic structure calculations employed a plane-wave basis set with an energy convergence threshold of $1.0 \times 10^{-4}$ Ry. The mixing parameter for electron density self-consistency was set to 0.2 using the local Thomas-Fermi mixing scheme to enhance convergence stability for this complex molecular system. A maximum of 500 self-consistent field iterations was allowed per ionic step.
+
+\subsection{Molecular Dynamics Simulations}
+
+Ab initio molecular dynamics (AIMD) simulations were performed in the canonical (NVT) ensemble using the Beeman algorithm for ionic propagation. Temperature control was achieved through stochastic velocity rescaling (SVR) thermostat~\cite{svr} set to maintain the system at 300 K, which corresponds to room temperature conditions relevant for practical electrochemical applications.
+
+The molecular dynamics time step was set to 20.67 a.u. (approximately 0.5 fs), and simulations were conducted for 2000 steps, corresponding to a total simulation time of approximately 1 ps. This duration is sufficient to observe initial dynamics and structural relaxation of the electrolyte-nanoscroll interface while remaining computationally tractable for this system size. Calculations were restarted from previously saved configurations to extend the simulation trajectory.
+
+A wall-time limit of 86000 seconds (approximately 24 hours) was imposed for computational resource management. Trajectory data and electronic structure information were stored for subsequent analysis of structural, dynamic, and electronic properties of the CNS-electrolyte system.
+
+% Bibliography examples - adjust according to your actual references
+% \begin{thebibliography}{99}
+% \bibitem{pubchem} Kim, S. et al. PubChem 2019 update. \textit{Nucleic Acids Res.} \textbf{47}, D1102–D1109 (2019).
+% \bibitem{qe} Giannozzi, P. et al. QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of materials. \textit{J. Phys.: Condens. Matter} \textbf{21}, 395502 (2009).
+% \bibitem{packmol} Martínez, L. et al. PACKMOL: A package for building initial configurations for molecular dynamics simulations. \textit{J. Comput. Chem.} \textbf{30}, 2157–2164 (2009).
+% \bibitem{pbe} Perdew, J. P., Burke, K. \& Ernzerhof, M. Generalized gradient approximation made simple. \textit{Phys. Rev. Lett.} \textbf{77}, 3865–3868 (1996).
+% \bibitem{grimme} Grimme, S., Antony, J., Ehrlich, S. \& Krieg, H. A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu. \textit{J. Chem. Phys.} \textbf{132}, 154104 (2010).
+% \bibitem{svr} Bussi, G., Donadio, D. \& Parrinello, M. Canonical sampling through velocity rescaling. \textit{J. Chem. Phys.} \textbf{126}, 014101 (2007).
+% \end{thebibliography}
