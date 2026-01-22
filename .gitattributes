@@ -1,1 +1,2 @@
+AlCl3_[EMIm]Cl_(1.3per_mole)_carbon_nanoscroll/11_interfase_carbonos_fijos/joint_simulation.traj filter=lfs diff=lfs merge=lfs -text
 *.traj filter=lfs diff=lfs merge=lfs -text

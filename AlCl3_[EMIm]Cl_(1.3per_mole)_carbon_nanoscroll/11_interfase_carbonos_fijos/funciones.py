@@ -182,61 +182,6 @@ def get_data(moleculas:list , file):
 	return df
 
 
-
-from ase.io import read, write
-import glob
-import os
-
-def unir_pwouts_en_trayectoria(nombre_salida:str="trayectoria_continua.traj", carpetas:list=None):
-	"""
-	Une todos los pw.out.* de múltiples carpetas en una sola trayectoria continua.
-	
-	Args:
-		nombre_salida (str): nombre del archivo .traj resultante.
-		carpetas (list): lista de carpetas donde buscar pw.out.*, si None busca 'outputs_*'.
-
-	Returns:
-		nombre_salida.traj: Un archivo que contiene la informacion de output files individuales.
-	"""
-	
-	# Si no se pasan carpetas, detecta todas las que empiecen con outputs_
-	if carpetas is None:
-		carpetas = sorted([d for d in os.listdir('.') if d.startswith("outputs_")])
-
-	print(f"Carpetas detectadas: {carpetas}\n")
-
-	todas_las_imagenes = []
-	es_primer_archivo_global = True  # Para no borrar el primer frame del primer archivo total
-
-	for carpeta in carpetas:
-		archivos = sorted(glob.glob(f"{carpeta}/pw.out.*"))
-		print(f"\nProcesando carpeta: {carpeta} ({len(archivos)} archivos encontrados)")
-
-		for i, f in enumerate(archivos):
-			try:
-				imgs = read(f, index=':')
-
-				# Si no es el primer archivo global → borrar primer frame
-				if not es_primer_archivo_global:
-					imgs = imgs[1:]
-
-				# Después del primer archivo, desactivar bandera
-				es_primer_archivo_global = False  
-
-				todas_las_imagenes.extend(imgs)
-				print(f"   {f}: {len(imgs)} frames añadidos")
-
-			except Exception as e:
-				print(f"   Error leyendo {f}: {e}")
-
-	# Guardar trayectoria
-	write(nombre_salida, todas_las_imagenes)
-	print(f"\nTrayectoria final con {len(todas_las_imagenes)} frames guardada en '{nombre_salida}'")
-
-	return todas_las_imagenes
-
-
-
 def read_kinetic_energy_and_temperature(file):
 	"""
 	Extrae la temperatura instantánea y la energía cinética de cada paso de una
