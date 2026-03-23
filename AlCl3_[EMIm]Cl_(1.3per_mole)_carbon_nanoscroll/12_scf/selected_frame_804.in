@@ -1,0 +1,43 @@
+&CONTROL
+    calculation = 'scf'
+    restart_mode = 'from_scratch'
+    prefix='ns',
+    nstep=2000,
+    pseudo_dir = '/home/elmer.barquero/carbon_nn/pseudo',
+    outdir= '.',
+    max_seconds=86000
+/
+&SYSTEM
+    ntyp = 2
+    nat = 5
+   ibrav            = 0
+   occupations='smearing', smearing='mp', degauss=0.02,
+   vdw_corr='dft-d3'
+
+/
+&ELECTRONS
+!   diagonalization  = 'cg'
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+!   mixing_ndim      = 8
+   conv_thr         = 1.0D-4
+   electron_maxstep = 500
+/
+
+ATOMIC_SPECIES
+Al 26.9815385 Al.pbe-n-kjpaw_psl.1.0.0.UPF
+Cl 35.45 Cl.pbe-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS gamma
+
+CELL_PARAMETERS angstrom
+25.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 25.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 16.80000000000000
+
+ATOMIC_POSITIONS angstrom
+Cl 11.5056253618 9.0391767741 8.7842448415
+Cl 8.4476362177 7.2851389318 9.2792586058
+Cl 11.4809303713 5.7740361328 10.5663935235
+Al 10.5061247214 7.5456243433 10.0605231340
+Cl 12.6760297179 8.7403045641 -5.1133587805
